@@ -10,8 +10,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#06100d;--bg2:#091713;--panel:#0b1a16;--panel2:#0e211b;--line:#ffffff12;
-  --text:#edf8f3;--muted:#91a39b;--green:#54e7b0;--green2:#1bbf83;
+  --bg:#06110d;--bg2:#091713;--panel:#0c1c17;--panel2:#10251e;--line:#ffffff14;
+  --text:#f2faf6;--muted:#91a69d;--green:#55e8b1;--green2:#22c98c;
   --shadow:0 25px 80px #0008;
 }
 body.light{
@@ -50,11 +50,11 @@ nav a:hover{color:var(--text)}
 .stats{margin:-45px 6vw 0;position:relative;display:grid;grid-template-columns:repeat(4,1fr);background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}
 .stats div{padding:23px;border-left:1px solid var(--line)}body.en .stats div{border-left:0;border-right:1px solid var(--line)}.stats div:last-child{border-left:0}.stats strong{display:block;color:var(--green);font-size:27px}.stats span{color:var(--muted);font-size:11px}
 section.content{padding:115px 8vw}.head{display:flex;align-items:end;justify-content:space-between;gap:50px;margin-bottom:55px}.head h2,.dark h2,.about h2{font-size:clamp(35px,4.5vw,58px);line-height:1.08;letter-spacing:-2px;margin:15px 0}.head p{max-width:480px;color:var(--muted);font-size:14px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:30px;min-height:285px;transition:.25s;box-shadow:0 10px 40px transparent}.card:hover{transform:translateY(-7px);border-color:#54e7b04c;box-shadow:0 20px 60px #0002}.num{color:var(--green);font:12px monospace}.card h3{margin-top:45px;font-size:19px}.card p{color:var(--muted);font-size:13px}.card a{color:var(--green);font-size:12px;font-weight:900}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:30px;min-height:295px;transition:.25s;box-shadow:0 10px 40px transparent}.card:hover{transform:translateY(-7px);border-color:#54e7b04c;box-shadow:0 20px 60px #0002}.num{color:var(--green);font:12px monospace}.card h3{margin-top:45px;font-size:19px}.card p{color:var(--muted);font-size:13px}.card a{color:var(--green);font-size:12px;font-weight:900}
 .dark{padding:115px 8vw;background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.dark .head p{color:var(--muted)}.solutions{border-top:1px solid var(--line)}.solution{display:grid;grid-template-columns:60px 1fr 30px;gap:15px;align-items:center;padding:24px 0;border-bottom:1px solid var(--line);color:var(--green)}.solution div{color:var(--muted);font-size:13px}.solution strong{display:block;color:var(--text);font-size:19px}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.step{border-top:1px solid #294039;padding-top:20px}.step b{color:var(--green);font:12px monospace}.step h3{margin-top:23px}.step p{color:var(--muted);font-size:13px}
 .about{padding:115px 8vw;background:linear-gradient(135deg,var(--panel),var(--panel2))}.about p{max-width:720px;color:var(--muted)}.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:28px}.pill{border:1px solid #54e7b03d;border-radius:50px;padding:7px 13px;color:var(--muted);font-size:11px}
 .contact{display:grid;grid-template-columns:1fr 1fr;gap:9vw}.contact p{max-width:500px;color:var(--muted)}
-form{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:28px;box-shadow:var(--shadow)}
+form{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:30px;box-shadow:var(--shadow)}
 label.field{display:block;color:var(--muted);font-size:11px;margin-bottom:14px}
 input,textarea,select{width:100%;display:block;margin-top:6px;background:var(--bg);border:1px solid #20332c;border-radius:7px;padding:12px;color:var(--text);font:inherit;font-size:13px;outline:none}
 input:focus,textarea:focus,select:focus{border-color:var(--green)}form .btn{width:100%;border:0;cursor:pointer;margin-top:3px}form .note{font-size:10px;color:var(--muted);margin-top:10px}
@@ -120,7 +120,7 @@ body.en .brand{direction:ltr}.lang-label{font-size:11px}
 <section id="about" class="about"><label data-i18n="about_label">لماذا CLEAN LINE</label><h2 data-i18n-html="about_title">التكنولوجيا يجب أن تجعل العمل <span>أسهل.</span></h2><p data-i18n="about_desc">Clean Line Business Support شركة حلول رقمية تساعد الشركات على الوصول إلى أدوات وتقنيات حديثة بدون تعقيد غير ضروري، مع التركيز على المشكلة التجارية والنتيجة.</p><div class="pills"><span class="pill">Business-first</span><span class="pill">Modern Technology</span><span class="pill">Clear Communication</span><span class="pill">Built to Scale</span></div></section>
 
 <section id="contact" class="content contact"><div><label data-i18n="contact_label">لنبني شيئًا</label><h2 data-i18n-html="contact_title">عندك مشكلة؟<br><span>خلينا نحلها.</span></h2><p data-i18n="contact_desc">احكيلنا شو بدك. مش لازم تعرف الحل التقني — هذه مهمتنا.</p></div>
-<form action="https://formspree.io/f/mnpawpjr" method="POST">
+<form action="https://formspree.io/f/xyegoeag" method="POST">
 <label class="field"><span data-i18n="f_name">الاسم</span><input name="name" required placeholder="اسمك" data-i18n-placeholder="ph_name"></label>
 <label class="field"><span data-i18n="f_company">الشركة</span><input name="company" placeholder="اسم الشركة" data-i18n-placeholder="ph_company"></label>
 <label class="field"><span data-i18n="f_email">الإيميل</span><input name="email" required type="email" placeholder="you@example.com"></label>
