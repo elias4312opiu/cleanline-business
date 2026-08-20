@@ -1,38 +1,211 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Clean Line Business Support — حلول رقمية متكاملة للشركات.">
 <title>Clean Line Business Support</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#06100d;--panel:#0a1714;--line:#ffffff12;--text:#edf8f3;--muted:#91a39b;--green:#54e7b0;--green2:#1bbf83}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Tahoma,sans-serif;line-height:1.7}a{text-decoration:none;color:inherit}.nav{height:76px;position:fixed;top:0;left:0;right:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:0 6vw;background:#06100ddd;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:10px;font-weight:800}.logo{width:40px;height:40px;border:1px solid var(--green);border-radius:11px;display:grid;place-items:center;color:var(--green);font-weight:900;letter-spacing:-2px}.brand small{display:block;color:#6f827a;font-size:9px;letter-spacing:1px}nav{display:flex;align-items:center;gap:25px;color:#aabbb4;font-size:13px}nav a:hover{color:#fff}.navbtn{background:var(--green);color:#06100d;padding:9px 15px;border-radius:8px;font-weight:800}.menu{display:none;background:none;border:0;color:#fff;font-size:25px}
-.hero{min-height:780px;padding:155px 8vw 100px;display:grid;grid-template-columns:1.05fr .95fr;gap:7vw;align-items:center;position:relative;overflow:hidden;background:radial-gradient(circle at 20% 20%,#1bbf8312,transparent 30%),radial-gradient(circle at 80% 35%,#54e7b012,transparent 28%)}.orb{position:absolute;width:350px;height:350px;border-radius:50%;background:var(--green);filter:blur(120px);opacity:.07}.o1{right:-160px;top:60px}.o2{left:-220px;bottom:-250px}.tag{color:var(--green);font-size:11px;font-weight:800;letter-spacing:2px}.hero h1{font-size:clamp(45px,6vw,78px);line-height:1.03;letter-spacing:-3px;margin:18px 0}.hero h1 span{color:var(--green)}.hero p{max-width:650px;color:var(--muted);font-size:17px}.actions{display:flex;gap:12px;margin:30px 0}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:9px;padding:14px 20px;font-weight:800;font-size:13px}.primary{background:var(--green);color:#06100d}.secondary{border:1px solid #ffffff20;color:#d7e5df}.trust{font-size:11px;color:#6f827a}.terminal{direction:ltr;text-align:left;background:#091713;border:1px solid #54e7b033;border-radius:16px;box-shadow:0 35px 100px #0009;overflow:hidden}.top{height:48px;border-bottom:1px solid #ffffff0b;display:flex;align-items:center;gap:7px;padding:0 16px;color:#4f635b;font:11px monospace}.top i{width:8px;height:8px;background:#30413a;border-radius:50%}.top span{margin-left:12px}.code{padding:28px;font:13px/2.2 monospace;color:#c8d5cf}.dim{color:#354840}.green{color:var(--green)}.blue{color:#78bcff}.purple{color:#c895ff}.status{border-top:1px solid #ffffff0c;padding-top:15px;margin-top:18px;color:#5c7269}.status b{float:right;color:var(--green)}
-.stats{margin:-45px 6vw 0;position:relative;display:grid;grid-template-columns:repeat(4,1fr);background:var(--panel);border:1px solid var(--line);border-radius:14px}.stats div{padding:23px;border-left:1px solid var(--line)}.stats div:last-child{border-left:0}.stats strong{display:block;color:var(--green);font-size:27px}.stats span{color:#71827b;font-size:11px}
-section.content{padding:115px 8vw}.head{display:flex;align-items:end;justify-content:space-between;gap:50px;margin-bottom:55px}.head h2,.dark h2,.about h2{font-size:clamp(35px,4.5vw,58px);line-height:1.08;letter-spacing:-2px;margin:15px 0}.head h2 span,.dark h2 span,.about h2 span{color:var(--green)}.head p{max-width:480px;color:var(--muted);font-size:14px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:#091512;border:1px solid var(--line);border-radius:12px;padding:30px;min-height:285px;transition:.25s}.card:hover{transform:translateY(-7px);border-color:#54e7b04c}.num{color:var(--green);font:12px monospace}.card h3{margin-top:45px;font-size:19px}.card p{color:#778981;font-size:13px}.card a{color:var(--green);font-size:12px;font-weight:800}.dark{padding:115px 8vw;background:#040a08;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.dark .head p{color:#71827b}.solutions{border-top:1px solid var(--line)}.solution{display:grid;grid-template-columns:60px 1fr 30px;gap:15px;align-items:center;padding:24px 0;border-bottom:1px solid var(--line);color:var(--green)}.solution div{color:#81928b;font-size:13px}.solution strong{display:block;color:#eef8f4;font-size:19px}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.step{border-top:1px solid #294039;padding-top:20px}.step b{color:var(--green);font:12px monospace}.step h3{margin-top:23px}.step p{color:#778981;font-size:13px}.about{padding:115px 8vw;background:linear-gradient(135deg,#091a15,#0d211b)}.about p{max-width:720px;color:var(--muted)}.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:28px}.pill{border:1px solid #54e7b03d;border-radius:50px;padding:7px 13px;color:#91a39b;font-size:11px}.contact{display:grid;grid-template-columns:1fr 1fr;gap:9vw}.contact p{max-width:500px;color:var(--muted)}form{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:28px}label.field{display:block;color:#8da099;font-size:11px;margin-bottom:14px}input,textarea,select{width:100%;display:block;margin-top:6px;background:#06100d;border:1px solid #20332c;border-radius:7px;padding:12px;color:#edf8f3;font:inherit;font-size:13px;outline:none}input:focus,textarea:focus,select:focus{border-color:var(--green)}form .btn{width:100%;border:0;cursor:pointer;margin-top:3px}form .note{font-size:10px;color:#53665e;margin-top:10px}footer{padding:35px 8vw;border-top:1px solid var(--line);display:flex;align-items:center;gap:30px;flex-wrap:wrap;color:#687a72;font-size:11px}footer p{flex:1}footer small{width:100%}
-@media(max-width:850px){nav{display:none}.menu{display:block}.hero{grid-template-columns:1fr}.grid,.steps{grid-template-columns:1fr 1fr}.contact{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.head{display:block}.head p{margin-top:25px}}@media(max-width:560px){.nav{padding:0 5vw}.hero,section.content,.dark,.about{padding-left:5vw;padding-right:5vw}.hero h1{letter-spacing:-2px}.actions{flex-direction:column}.grid,.steps,.contact{grid-template-columns:1fr}.stats{margin-left:5vw;margin-right:5vw}.stats div{border-left:0;border-bottom:1px solid var(--line)}.stats div:last-child{border-bottom:0}.solution{grid-template-columns:45px 1fr 20px}}
-</style></head>
+:root{
+  --bg:#06100d;--bg2:#091713;--panel:#0b1a16;--panel2:#0e211b;--line:#ffffff12;
+  --text:#edf8f3;--muted:#91a39b;--green:#54e7b0;--green2:#1bbf83;
+  --shadow:0 25px 80px #0008;
+}
+body.light{
+  --bg:#f4f8f6;--bg2:#ffffff;--panel:#ffffff;--panel2:#edf8f3;--line:#0a211615;
+  --text:#10231d;--muted:#5c7067;--shadow:0 20px 60px #16352a12;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Cairo",Arial,sans-serif;line-height:1.7;transition:background .3s,color .3s}
+body.en{font-family:"Inter",Arial,sans-serif}
+a{text-decoration:none;color:inherit}
+button,input,textarea,select{font:inherit}
+.nav{height:76px;position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:0 6vw;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900}
+.logo{width:42px;height:42px;border:1px solid var(--green);border-radius:12px;display:grid;place-items:center;color:var(--green);font-weight:900;letter-spacing:-2px}
+.brand small{display:block;color:var(--muted);font-size:8px;letter-spacing:1.2px}
+nav{display:flex;align-items:center;gap:22px;color:var(--muted);font-size:12px}
+nav a:hover{color:var(--text)}
+.navbtn{background:var(--green);color:#06100d;padding:9px 15px;border-radius:8px;font-weight:900}
+.tools{display:flex;align-items:center;gap:7px}
+.tool{width:38px;height:38px;border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:10px;cursor:pointer;font-size:13px;font-weight:800}
+.menu{display:none;background:none;border:0;color:var(--text);font-size:25px}
+.hero{min-height:790px;padding:155px 8vw 105px;display:grid;grid-template-columns:1.05fr .95fr;gap:7vw;align-items:center;position:relative;overflow:hidden;background:radial-gradient(circle at 20% 20%,#1bbf8312,transparent 30%),radial-gradient(circle at 80% 35%,#54e7b012,transparent 28%)}
+.orb{position:absolute;width:350px;height:350px;border-radius:50%;background:var(--green);filter:blur(120px);opacity:.07;pointer-events:none}.o1{right:-160px;top:60px}.o2{left:-220px;bottom:-250px}
+.tag{color:var(--green);font-size:11px;font-weight:900;letter-spacing:1.5px}
+.hero h1{font-size:clamp(45px,6vw,78px);line-height:1.04;letter-spacing:-3px;margin:18px 0}
+.hero h1 span,.head h2 span,.dark h2 span,.about h2 span{color:var(--green)}
+.hero p{max-width:650px;color:var(--muted);font-size:17px}
+.actions{display:flex;gap:12px;margin:30px 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:9px;padding:14px 20px;font-weight:900;font-size:13px}
+.primary{background:var(--green);color:#06100d}.secondary{border:1px solid var(--line);color:var(--text);background:transparent}
+.trust{font-size:11px;color:var(--muted)}
+.terminal{direction:ltr;text-align:left;background:#091713;border:1px solid #54e7b033;border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
+.top{height:48px;border-bottom:1px solid #ffffff0b;display:flex;align-items:center;gap:7px;padding:0 16px;color:#4f635b;font:11px monospace}.top i{width:8px;height:8px;background:#30413a;border-radius:50%}.top span{margin-left:12px}
+.code{padding:28px;font:13px/2.2 monospace;color:#c8d5cf}.dim{color:#354840}.green{color:var(--green)}.blue{color:#78bcff}.purple{color:#c895ff}.status{border-top:1px solid #ffffff0c;padding-top:15px;margin-top:18px;color:#5c7269}.status b{float:right;color:var(--green)}
+.stats{margin:-45px 6vw 0;position:relative;display:grid;grid-template-columns:repeat(4,1fr);background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.stats div{padding:23px;border-left:1px solid var(--line)}body.en .stats div{border-left:0;border-right:1px solid var(--line)}.stats div:last-child{border-left:0}.stats strong{display:block;color:var(--green);font-size:27px}.stats span{color:var(--muted);font-size:11px}
+section.content{padding:115px 8vw}.head{display:flex;align-items:end;justify-content:space-between;gap:50px;margin-bottom:55px}.head h2,.dark h2,.about h2{font-size:clamp(35px,4.5vw,58px);line-height:1.08;letter-spacing:-2px;margin:15px 0}.head p{max-width:480px;color:var(--muted);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:30px;min-height:285px;transition:.25s;box-shadow:0 10px 40px transparent}.card:hover{transform:translateY(-7px);border-color:#54e7b04c;box-shadow:0 20px 60px #0002}.num{color:var(--green);font:12px monospace}.card h3{margin-top:45px;font-size:19px}.card p{color:var(--muted);font-size:13px}.card a{color:var(--green);font-size:12px;font-weight:900}
+.dark{padding:115px 8vw;background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.dark .head p{color:var(--muted)}.solutions{border-top:1px solid var(--line)}.solution{display:grid;grid-template-columns:60px 1fr 30px;gap:15px;align-items:center;padding:24px 0;border-bottom:1px solid var(--line);color:var(--green)}.solution div{color:var(--muted);font-size:13px}.solution strong{display:block;color:var(--text);font-size:19px}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.step{border-top:1px solid #294039;padding-top:20px}.step b{color:var(--green);font:12px monospace}.step h3{margin-top:23px}.step p{color:var(--muted);font-size:13px}
+.about{padding:115px 8vw;background:linear-gradient(135deg,var(--panel),var(--panel2))}.about p{max-width:720px;color:var(--muted)}.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:28px}.pill{border:1px solid #54e7b03d;border-radius:50px;padding:7px 13px;color:var(--muted);font-size:11px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:9vw}.contact p{max-width:500px;color:var(--muted)}
+form{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:28px;box-shadow:var(--shadow)}
+label.field{display:block;color:var(--muted);font-size:11px;margin-bottom:14px}
+input,textarea,select{width:100%;display:block;margin-top:6px;background:var(--bg);border:1px solid #20332c;border-radius:7px;padding:12px;color:var(--text);font:inherit;font-size:13px;outline:none}
+input:focus,textarea:focus,select:focus{border-color:var(--green)}form .btn{width:100%;border:0;cursor:pointer;margin-top:3px}form .note{font-size:10px;color:var(--muted);margin-top:10px}
+footer{padding:35px 8vw;border-top:1px solid var(--line);display:flex;align-items:center;gap:30px;flex-wrap:wrap;color:var(--muted);font-size:11px}footer p{flex:1}footer small{width:100%}
+body.en .hero,body.en .stats,body.en .contact,body.en .solutions,body.en footer{direction:ltr}
+body.en .head,body.en .about,body.en .dark,body.en section.content{text-align:left}
+body.en .brand{direction:ltr}.lang-label{font-size:11px}
+@media(max-width:900px){nav{display:none}.menu{display:block}.hero{grid-template-columns:1fr}.grid,.steps{grid-template-columns:1fr 1fr}.contact{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.head{display:block}.head p{margin-top:25px}}
+@media(max-width:560px){.nav{padding:0 5vw}.hero,section.content,.dark,.about{padding-left:5vw;padding-right:5vw}.hero h1{letter-spacing:-2px}.actions{flex-direction:column}.grid,.steps,.contact{grid-template-columns:1fr}.stats{margin-left:5vw;margin-right:5vw}.stats div{border-left:0;border-bottom:1px solid var(--line)}body.en .stats div{border-right:0}.stats div:last-child{border-bottom:0}.solution{grid-template-columns:45px 1fr 20px}.tools{margin-left:auto;margin-right:10px}}
+</style>
+</head>
 <body>
-<header class="nav"><a class="brand" href="#home"><span class="logo">CL</span><span>Clean Line<small>BUSINESS SUPPORT</small></span></a><button class="menu" aria-label="menu">☰</button><nav><a href="#services">الخدمات</a><a href="#solutions">الحلول</a><a href="#process">طريقة العمل</a><a href="#about">من نحن</a><a class="navbtn" href="#contact">ابدأ مشروعك ↗</a></nav></header>
+<header class="nav">
+<a class="brand" href="#home"><span class="logo">CL</span><span>Clean Line<small>BUSINESS SUPPORT</small></span></a>
+<nav>
+<a href="#services" data-i18n="nav_services">الخدمات</a><a href="#solutions" data-i18n="nav_solutions">الحلول</a><a href="#process" data-i18n="nav_process">طريقة العمل</a><a href="#about" data-i18n="nav_about">من نحن</a><a class="navbtn" href="#contact" data-i18n="nav_start">ابدأ مشروعك ↗</a>
+</nav>
+<div class="tools"><button class="tool" id="langBtn" aria-label="Change language">EN</button><button class="tool" id="themeBtn" aria-label="Toggle theme">☼</button><button class="menu" aria-label="menu">☰</button></div>
+</header>
+
 <main>
-<section id="home" class="hero"><div class="orb o1"></div><div class="orb o2"></div><div><div class="tag">شريكك التقني للأعمال</div><h1>نحوّل مشاكل الشركات إلى <span>حلول رقمية.</span></h1><p>نصمم المواقع والأنظمة المخصصة، ونبني الأتمتة، ونساعد الشركات على حماية بياناتها وتحويلها إلى قرارات أفضل.</p><div class="actions"><a class="btn primary" href="#contact">ابدأ مشروعك ↗</a><a class="btn secondary" href="#services">استكشف خدماتنا</a></div><div class="trust">✓ حلول مخصصة &nbsp; ✓ تركيز على الأعمال &nbsp; ✓ قابلة للتوسع</div></div><div class="terminal"><div class="top"><i></i><i></i><i></i><span>cleanline.system</span></div><div class="code"><span class="dim">01</span> <span class="blue">const</span> business = <span class="purple">"your company"</span>;<br><span class="dim">02</span> solution.<span class="green">analyze</span>(business);<br><span class="dim">03</span> solution.<span class="green">automate</span>();<br><span class="dim">04</span> solution.<span class="green">secure</span>();<br><span class="dim">05</span> solution.<span class="green">scale</span>();<div class="status">● SYSTEM READY <b>+ GROWTH</b></div></div></div></section>
-<section class="stats"><div><strong>01</strong><span>مشكلة ← حل</span></div><div><strong>24/7</strong><span>حضور رقمي</span></div><div><strong>100%</strong><span>حلول مخصصة</span></div><div><strong>∞</strong><span>قابلية للتوسع</span></div></section>
-<section id="services" class="content"><div class="head"><div><label>ماذا نقدم</label><h2>شريك واحد.<br><span>قدرات متعددة.</span></h2></div><p>من الفكرة إلى الحل الجاهز، نجمع التصميم والتقنية وفهم الأعمال في منظومة واحدة.</p></div><div class="grid">
-<article class="card"><span class="num">01</span><h3>تصميم وتطوير المواقع</h3><p>مواقع حديثة وسريعة تعطي شركتك حضورًا احترافيًا وتساعد على تحويل الزوار إلى عملاء.</p><a href="#contact">اطلب موقعًا ↗</a></article>
-<article class="card"><span class="num">02</span><h3>الأنظمة المخصصة</h3><p>لوحات تحكم وبوابات وأنظمة داخلية مبنية حسب طريقة عمل شركتك الفعلية.</p><a href="#contact">ابنِ نظامًا ↗</a></article>
-<article class="card"><span class="num">03</span><h3>أتمتة الأعمال</h3><p>نقلل العمل اليدوي عبر ربط الأدوات وأتمتة المهام وسير العمليات.</p><a href="#contact">أتمت عملك ↗</a></article>
-<article class="card"><span class="num">04</span><h3>الأمن السيبراني</h3><p>تقييمات وحلول أمنية عملية تساعد على تقليل المخاطر وتقوية الأنظمة الرقمية.</p><a href="#contact">احمِ شركتك ↗</a></article>
-<article class="card"><span class="num">05</span><h3>البيانات والتحليلات</h3><p>تحويل البيانات المبعثرة إلى تقارير ولوحات معلومات تساعدك على اتخاذ قرارات أفضل.</p><a href="#contact">حلّل بياناتك ↗</a></article>
-<article class="card"><span class="num">06</span><h3>النمو الرقمي</h3><p>تحسين الوجود الإلكتروني وهيكلة المحتوى وتجربة المستخدم بشكل يخدم نمو الشركة.</p><a href="#contact">طوّر حضورك ↗</a></article>
+<section id="home" class="hero">
+<div class="orb o1"></div><div class="orb o2"></div>
+<div>
+<div class="tag" data-i18n="tag">شريكك التقني للأعمال</div>
+<h1 data-i18n-html="hero_title">نحوّل مشاكل الشركات إلى <span>حلول رقمية.</span></h1>
+<p data-i18n="hero_desc">نصمم المواقع والأنظمة المخصصة، ونبني الأتمتة، ونساعد الشركات على حماية بياناتها وتحويلها إلى قرارات أفضل.</p>
+<div class="actions"><a class="btn primary" href="#contact" data-i18n="hero_cta">ابدأ مشروعك ↗</a><a class="btn secondary" href="#services" data-i18n="hero_services">استكشف خدماتنا</a></div>
+<div class="trust" data-i18n="trust">✓ حلول مخصصة &nbsp; ✓ تركيز على الأعمال &nbsp; ✓ قابلة للتوسع</div>
+</div>
+<div class="terminal"><div class="top"><i></i><i></i><i></i><span>cleanline.system</span></div><div class="code"><span class="dim">01</span> <span class="blue">const</span> business = <span class="purple">"your company"</span>;<br><span class="dim">02</span> solution.<span class="green">analyze</span>(business);<br><span class="dim">03</span> solution.<span class="green">automate</span>();<br><span class="dim">04</span> solution.<span class="green">secure</span>();<br><span class="dim">05</span> solution.<span class="green">scale</span>();<div class="status">● SYSTEM READY <b>+ GROWTH</b></div></div></div>
+</section>
+
+<section class="stats"><div><strong>01</strong><span data-i18n="stat1">مشكلة ← حل</span></div><div><strong>24/7</strong><span data-i18n="stat2">حضور رقمي</span></div><div><strong>100%</strong><span data-i18n="stat3">حلول مخصصة</span></div><div><strong>∞</strong><span data-i18n="stat4">قابلية للتوسع</span></div></section>
+
+<section id="services" class="content">
+<div class="head"><div><label data-i18n="services_label">ماذا نقدم</label><h2 data-i18n-html="services_title">شريك واحد.<br><span>قدرات متعددة.</span></h2></div><p data-i18n="services_desc">من الفكرة إلى الحل الجاهز، نجمع التصميم والتقنية وفهم الأعمال في منظومة واحدة.</p></div>
+<div class="grid">
+<article class="card"><span class="num">01</span><h3 data-i18n="s1_title">تصميم وتطوير المواقع</h3><p data-i18n="s1_desc">مواقع حديثة وسريعة تعطي شركتك حضورًا احترافيًا وتساعد على تحويل الزوار إلى عملاء.</p><a href="#contact" data-i18n="s1_cta">اطلب موقعًا ↗</a></article>
+<article class="card"><span class="num">02</span><h3 data-i18n="s2_title">الأنظمة المخصصة</h3><p data-i18n="s2_desc">لوحات تحكم وبوابات وأنظمة داخلية مبنية حسب طريقة عمل شركتك الفعلية.</p><a href="#contact" data-i18n="s2_cta">ابنِ نظامًا ↗</a></article>
+<article class="card"><span class="num">03</span><h3 data-i18n="s3_title">أتمتة الأعمال</h3><p data-i18n="s3_desc">نقلل العمل اليدوي عبر ربط الأدوات وأتمتة المهام وسير العمليات.</p><a href="#contact" data-i18n="s3_cta">أتمت عملك ↗</a></article>
+<article class="card"><span class="num">04</span><h3 data-i18n="s4_title">الأمن السيبراني</h3><p data-i18n="s4_desc">تقييمات وحلول أمنية عملية تساعد على تقليل المخاطر وتقوية الأنظمة الرقمية.</p><a href="#contact" data-i18n="s4_cta">احمِ شركتك ↗</a></article>
+<article class="card"><span class="num">05</span><h3 data-i18n="s5_title">البيانات والتحليلات</h3><p data-i18n="s5_desc">تحويل البيانات المبعثرة إلى تقارير ولوحات معلومات تساعدك على اتخاذ قرارات أفضل.</p><a href="#contact" data-i18n="s5_cta">حلّل بياناتك ↗</a></article>
+<article class="card"><span class="num">06</span><h3 data-i18n="s6_title">النمو الرقمي</h3><p data-i18n="s6_desc">تحسين الوجود الإلكتروني وهيكلة المحتوى وتجربة المستخدم بشكل يخدم نمو الشركة.</p><a href="#contact" data-i18n="s6_cta">طوّر حضورك ↗</a></article>
 </div></section>
-<section id="solutions" class="dark"><div class="head"><div><label>نبني حول احتياجك</label><h2>مش قالب جاهز.<br><span>حل حقيقي.</span></h2></div><p>احكِ لنا ما الذي يبطئ عملك، ونحن نحدد المشكلة ونصمم الحل ونبنيه ليكبر مع شركتك.</p></div><div class="solutions"><div class="solution"><b>01</b><div><strong>نفهم</strong>الأهداف والمشاكل والأدوات وسير العمل الحقيقي.</div>↗</div><div class="solution"><b>02</b><div><strong>نصمم</strong>الحل المناسب من ناحية التجربة والعمليات والتقنية.</div>↗</div><div class="solution"><b>03</b><div><strong>نبني</strong>حلًا عمليًا يهتم بالأداء والأمان وقابلية التوسع.</div>↗</div><div class="solution"><b>04</b><div><strong>نطوّر</strong>الحل باستمرار حسب نمو واحتياجات الشركة.</div>↗</div></div></section>
-<section id="process" class="content"><label>طريقة CLEAN LINE</label><h2>عملية بسيطة.<br><span>تنفيذ جاد.</span></h2><div class="steps"><div class="step"><b>01</b><h3>الاكتشاف</h3><p>نحدد الهدف التجاري والمشكلة الحقيقية.</p></div><div class="step"><b>02</b><h3>الاستراتيجية</h3><p>نختار الهيكل والميزات والتقنية المناسبة.</p></div><div class="step"><b>03</b><h3>البناء</h3><p>نحوّل الخطة إلى حل رقمي عملي واحترافي.</p></div><div class="step"><b>04</b><h3>الإطلاق والتطوير</h3><p>نطلق الحل ونحسّنه مع الوقت.</p></div></div></section>
-<section id="about" class="about"><label>لماذا CLEAN LINE</label><h2>التكنولوجيا يجب أن تجعل العمل <span>أسهل.</span></h2><p>Clean Line Business Support شركة حلول رقمية تساعد الشركات على الوصول إلى أدوات وتقنيات حديثة بدون تعقيد غير ضروري، مع التركيز على المشكلة التجارية والنتيجة.</p><div class="pills"><span class="pill">Business-first</span><span class="pill">Modern Technology</span><span class="pill">Clear Communication</span><span class="pill">Built to Scale</span></div></section>
-<section id="contact" class="content contact"><div><label>لنبني شيئًا</label><h2>عندك مشكلة؟<br><span>خلينا نحلها.</span></h2><p>احكيلنا شو بدك. مش لازم تعرف الحل التقني — هذه مهمتنا.</p></div><form id="contactForm"><label class="field">الاسم<input name="name" required placeholder="اسمك"></label><label class="field">الشركة<input name="company" placeholder="اسم الشركة"></label><label class="field">الإيميل<input name="email" required type="email" placeholder="you@example.com"></label><label class="field">الخدمة<select name="service"><option>موقع إلكتروني</option><option>نظام مخصص</option><option>أتمتة</option><option>أمن سيبراني</option><option>بيانات وتحليلات</option><option>نمو رقمي</option><option>لست متأكدًا بعد</option></select></label><label class="field">رسالتك<textarea name="message" required rows="5" placeholder="احكيلنا عن مشروعك أو المشكلة التي تريد حلها"></textarea></label><button class="btn primary" type="submit">إرسال طلب المشروع ↗</button><div class="note">سيتم إرسال الطلب إلى بريد Clean Line عند استخدام جهاز العميل لتطبيق البريد.</div></form></section>
-</main><footer><a class="brand" href="#home"><span class="logo">CL</span><span>Clean Line<small>BUSINESS SUPPORT</small></span></a><p>حلول رقمية للشركات المستعدة للتقدم.</p><small>© <span id="year"></span> Clean Line Business Support</small></footer>
+
+<section id="solutions" class="dark"><div class="head"><div><label data-i18n="solutions_label">نبني حول احتياجك</label><h2 data-i18n-html="solutions_title">مش قالب جاهز.<br><span>حل حقيقي.</span></h2></div><p data-i18n="solutions_desc">احكِ لنا ما الذي يبطئ عملك، ونحن نحدد المشكلة ونصمم الحل ونبنيه ليكبر مع شركتك.</p></div>
+<div class="solutions">
+<div class="solution"><b>01</b><div><strong data-i18n="sol1_title">نفهم</strong><span data-i18n="sol1_desc">الأهداف والمشاكل والأدوات وسير العمل الحقيقي.</span></div>↗</div>
+<div class="solution"><b>02</b><div><strong data-i18n="sol2_title">نصمم</strong><span data-i18n="sol2_desc">الحل المناسب من ناحية التجربة والعمليات والتقنية.</span></div>↗</div>
+<div class="solution"><b>03</b><div><strong data-i18n="sol3_title">نبني</strong><span data-i18n="sol3_desc">حلًا عمليًا يهتم بالأداء والأمان وقابلية التوسع.</span></div>↗</div>
+<div class="solution"><b>04</b><div><strong data-i18n="sol4_title">نطوّر</strong><span data-i18n="sol4_desc">الحل باستمرار حسب نمو واحتياجات الشركة.</span></div>↗</div>
+</div></section>
+
+<section id="process" class="content"><label data-i18n="process_label">طريقة CLEAN LINE</label><h2 data-i18n-html="process_title">عملية بسيطة.<br><span>تنفيذ جاد.</span></h2>
+<div class="steps">
+<div class="step"><b>01</b><h3 data-i18n="p1_title">الاكتشاف</h3><p data-i18n="p1_desc">نحدد الهدف التجاري والمشكلة الحقيقية.</p></div>
+<div class="step"><b>02</b><h3 data-i18n="p2_title">الاستراتيجية</h3><p data-i18n="p2_desc">نختار الهيكل والميزات والتقنية المناسبة.</p></div>
+<div class="step"><b>03</b><h3 data-i18n="p3_title">البناء</h3><p data-i18n="p3_desc">نحوّل الخطة إلى حل رقمي عملي واحترافي.</p></div>
+<div class="step"><b>04</b><h3 data-i18n="p4_title">الإطلاق والتطوير</h3><p data-i18n="p4_desc">نطلق الحل ونحسّنه مع الوقت.</p></div>
+</div></section>
+
+<section id="about" class="about"><label data-i18n="about_label">لماذا CLEAN LINE</label><h2 data-i18n-html="about_title">التكنولوجيا يجب أن تجعل العمل <span>أسهل.</span></h2><p data-i18n="about_desc">Clean Line Business Support شركة حلول رقمية تساعد الشركات على الوصول إلى أدوات وتقنيات حديثة بدون تعقيد غير ضروري، مع التركيز على المشكلة التجارية والنتيجة.</p><div class="pills"><span class="pill">Business-first</span><span class="pill">Modern Technology</span><span class="pill">Clear Communication</span><span class="pill">Built to Scale</span></div></section>
+
+<section id="contact" class="content contact"><div><label data-i18n="contact_label">لنبني شيئًا</label><h2 data-i18n-html="contact_title">عندك مشكلة؟<br><span>خلينا نحلها.</span></h2><p data-i18n="contact_desc">احكيلنا شو بدك. مش لازم تعرف الحل التقني — هذه مهمتنا.</p></div>
+<form action="https://formspree.io/f/mnpawpjr" method="POST">
+<label class="field"><span data-i18n="f_name">الاسم</span><input name="name" required placeholder="اسمك" data-i18n-placeholder="ph_name"></label>
+<label class="field"><span data-i18n="f_company">الشركة</span><input name="company" placeholder="اسم الشركة" data-i18n-placeholder="ph_company"></label>
+<label class="field"><span data-i18n="f_email">الإيميل</span><input name="email" required type="email" placeholder="you@example.com"></label>
+<label class="field"><span data-i18n="f_service">الخدمة</span><select name="service"><option data-i18n="o1">موقع إلكتروني</option><option data-i18n="o2">نظام مخصص</option><option data-i18n="o3">أتمتة</option><option data-i18n="o4">أمن سيبراني</option><option data-i18n="o5">بيانات وتحليلات</option><option data-i18n="o6">نمو رقمي</option><option data-i18n="o7">لست متأكدًا بعد</option></select></label>
+<label class="field"><span data-i18n="f_message">رسالتك</span><textarea name="message" required rows="5" placeholder="احكيلنا عن مشروعك أو المشكلة التي تريد حلها" data-i18n-placeholder="ph_message"></textarea></label>
+<button class="btn primary" type="submit" data-i18n="submit">إرسال طلب المشروع ↗</button><div class="note" data-i18n="form_note">سيتم إرسال طلبك مباشرة إلى فريق Clean Line.</div>
+</form></section>
+</main>
+
+<footer><a class="brand" href="#home"><span class="logo">CL</span><span>Clean Line<small>BUSINESS SUPPORT</small></span></a><p data-i18n="footer_text">حلول رقمية للشركات المستعدة للتقدم.</p><small>© <span id="year"></span> Clean Line Business Support</small></footer>
+
 <script>
-document.getElementById('year').textContent=new Date().getFullYear();
-const menu=document.querySelector('.menu'),nav=document.querySelector('nav');menu.onclick=()=>{nav.style.display=nav.style.display==='flex'?'none':'flex';nav.style.position='absolute';nav.style.top='76px';nav.style.left='0';nav.style.right='0';nav.style.padding='20px 5vw';nav.style.background='#06100d';nav.style.flexDirection='column';nav.style.alignItems='flex-start'};
-document.querySelectorAll('nav a').forEach(a=>a.onclick=()=>{if(innerWidth<851)nav.style.display='none'});
-document.getElementById('contactForm').onsubmit=e=>{e.preventDefault();const f=new FormData(e.target);const subject=encodeURIComponent('طلب مشروع جديد - Clean Line Business Support');const body=encodeURIComponent('الاسم: '+f.get('name')+'\nالشركة: '+f.get('company')+'\nالإيميل: '+f.get('email')+'\nالخدمة: '+f.get('service')+'\n\nالرسالة:\n'+f.get('message'));location.href='mailto:cleanlinebusnisse@proton.me?subject='+subject+'&body='+body};
-</script></body></html>
+const translations={
+ar:{
+nav_services:"الخدمات",nav_solutions:"الحلول",nav_process:"طريقة العمل",nav_about:"من نحن",nav_start:"ابدأ مشروعك ↗",
+tag:"شريكك التقني للأعمال",hero_title:'نحوّل مشاكل الشركات إلى <span>حلول رقمية.</span>',
+hero_desc:"نصمم المواقع والأنظمة المخصصة، ونبني الأتمتة، ونساعد الشركات على حماية بياناتها وتحويلها إلى قرارات أفضل.",
+hero_cta:"ابدأ مشروعك ↗",hero_services:"استكشف خدماتنا",trust:"✓ حلول مخصصة &nbsp; ✓ تركيز على الأعمال &nbsp; ✓ قابلة للتوسع",
+stat1:"مشكلة ← حل",stat2:"حضور رقمي",stat3:"حلول مخصصة",stat4:"قابلية للتوسع",
+services_label:"ماذا نقدم",services_title:"شريك واحد.<br><span>قدرات متعددة.</span>",services_desc:"من الفكرة إلى الحل الجاهز، نجمع التصميم والتقنية وفهم الأعمال في منظومة واحدة.",
+s1_title:"تصميم وتطوير المواقع",s1_desc:"مواقع حديثة وسريعة تعطي شركتك حضورًا احترافيًا وتساعد على تحويل الزوار إلى عملاء.",s1_cta:"اطلب موقعًا ↗",
+s2_title:"الأنظمة المخصصة",s2_desc:"لوحات تحكم وبوابات وأنظمة داخلية مبنية حسب طريقة عمل شركتك الفعلية.",s2_cta:"ابنِ نظامًا ↗",
+s3_title:"أتمتة الأعمال",s3_desc:"نقلل العمل اليدوي عبر ربط الأدوات وأتمتة المهام وسير العمليات.",s3_cta:"أتمت عملك ↗",
+s4_title:"الأمن السيبراني",s4_desc:"تقييمات وحلول أمنية عملية تساعد على تقليل المخاطر وتقوية الأنظمة الرقمية.",s4_cta:"احمِ شركتك ↗",
+s5_title:"البيانات والتحليلات",s5_desc:"تحويل البيانات المبعثرة إلى تقارير ولوحات معلومات تساعدك على اتخاذ قرارات أفضل.",s5_cta:"حلّل بياناتك ↗",
+s6_title:"النمو الرقمي",s6_desc:"تحسين الوجود الإلكتروني وهيكلة المحتوى وتجربة المستخدم بشكل يخدم نمو الشركة.",s6_cta:"طوّر حضورك ↗",
+solutions_label:"نبني حول احتياجك",solutions_title:"مش قالب جاهز.<br><span>حل حقيقي.</span>",solutions_desc:"احكِ لنا ما الذي يبطئ عملك، ونحن نحدد المشكلة ونصمم الحل ونبنيه ليكبر مع شركتك.",
+sol1_title:"نفهم",sol1_desc:"الأهداف والمشاكل والأدوات وسير العمل الحقيقي.",sol2_title:"نصمم",sol2_desc:"الحل المناسب من ناحية التجربة والعمليات والتقنية.",sol3_title:"نبني",sol3_desc:"حلًا عمليًا يهتم بالأداء والأمان وقابلية التوسع.",sol4_title:"نطوّر",sol4_desc:"الحل باستمرار حسب نمو واحتياجات الشركة.",
+process_label:"طريقة CLEAN LINE",process_title:"عملية بسيطة.<br><span>تنفيذ جاد.</span>",p1_title:"الاكتشاف",p1_desc:"نحدد الهدف التجاري والمشكلة الحقيقية.",p2_title:"الاستراتيجية",p2_desc:"نختار الهيكل والميزات والتقنية المناسبة.",p3_title:"البناء",p3_desc:"نحوّل الخطة إلى حل رقمي عملي واحترافي.",p4_title:"الإطلاق والتطوير",p4_desc:"نطلق الحل ونحسّنه مع الوقت.",
+about_label:"لماذا CLEAN LINE",about_title:"التكنولوجيا يجب أن تجعل العمل <span>أسهل.</span>",about_desc:"Clean Line Business Support شركة حلول رقمية تساعد الشركات على الوصول إلى أدوات وتقنيات حديثة بدون تعقيد غير ضروري، مع التركيز على المشكلة التجارية والنتيجة.",
+contact_label:"لنبني شيئًا",contact_title:"عندك مشكلة؟<br><span>خلينا نحلها.</span>",contact_desc:"احكيلنا شو بدك. مش لازم تعرف الحل التقني — هذه مهمتنا.",
+f_name:"الاسم",f_company:"الشركة",f_email:"الإيميل",f_service:"الخدمة",f_message:"رسالتك",ph_name:"اسمك",ph_company:"اسم الشركة",ph_message:"احكيلنا عن مشروعك أو المشكلة التي تريد حلها",
+o1:"موقع إلكتروني",o2:"نظام مخصص",o3:"أتمتة",o4:"أمن سيبراني",o5:"بيانات وتحليلات",o6:"نمو رقمي",o7:"لست متأكدًا بعد",submit:"إرسال طلب المشروع ↗",form_note:"سيتم إرسال طلبك مباشرة إلى فريق Clean Line.",footer_text:"حلول رقمية للشركات المستعدة للتقدم."
+},
+en:{
+nav_services:"Services",nav_solutions:"Solutions",nav_process:"Process",nav_about:"About",nav_start:"Start a Project ↗",
+tag:"YOUR DIGITAL BUSINESS PARTNER",hero_title:'We turn business problems into <span>digital solutions.</span>',
+hero_desc:"We design websites and custom systems, automate workflows, and help businesses protect data and make better decisions.",
+hero_cta:"Start a Project ↗",hero_services:"Explore Services",trust:"✓ Custom solutions &nbsp; ✓ Business-focused &nbsp; ✓ Built to scale",
+stat1:"Problem → Solution",stat2:"Digital presence",stat3:"Custom solutions",stat4:"Built to scale",
+services_label:"WHAT WE DO",services_title:"One partner.<br><span>Many capabilities.</span>",services_desc:"From idea to launch, we combine design, technology, and business thinking in one system.",
+s1_title:"Web Design & Development",s1_desc:"Modern, fast websites that build a professional presence and help turn visitors into customers.",s1_cta:"Build a website ↗",
+s2_title:"Custom Systems",s2_desc:"Dashboards, portals, and internal systems built around how your company actually works.",s2_cta:"Build a system ↗",
+s3_title:"Business Automation",s3_desc:"Reduce manual work by connecting tools and automating tasks and workflows.",s3_cta:"Automate work ↗",
+s4_title:"Cybersecurity",s4_desc:"Practical security assessments and solutions that reduce risk and strengthen digital systems.",s4_cta:"Secure your business ↗",
+s5_title:"Data & Analytics",s5_desc:"Turn scattered data into reports and dashboards that support better decisions.",s5_cta:"Analyze your data ↗",
+s6_title:"Digital Growth",s6_desc:"Improve your online presence, content structure, and user experience around business growth.",s6_cta:"Grow digitally ↗",
+solutions_label:"BUILT AROUND YOUR NEEDS",solutions_title:"Not a template.<br><span>A real solution.</span>",solutions_desc:"Tell us what is slowing your business down. We identify the problem, design the solution, and build it to grow with you.",
+sol1_title:"Understand",sol1_desc:"Goals, problems, tools, and the real workflow.",sol2_title:"Design",sol2_desc:"The right experience, process, and technology.",sol3_title:"Build",sol3_desc:"A practical solution focused on performance, security, and scale.",sol4_title:"Improve",sol4_desc:"Continuously evolve the solution as your business grows.",
+process_label:"THE CLEAN LINE PROCESS",process_title:"Simple process.<br><span>Serious execution.</span>",p1_title:"Discovery",p1_desc:"Define the business goal and the real problem.",p2_title:"Strategy",p2_desc:"Choose the right structure, features, and technology.",p3_title:"Build",p3_desc:"Turn the plan into a practical, polished digital solution.",p4_title:"Launch & Improve",p4_desc:"Launch the solution and keep making it better.",
+about_label:"WHY CLEAN LINE",about_title:"Technology should make work <span>easier.</span>",about_desc:"Clean Line Business Support helps businesses access modern tools and technology without unnecessary complexity, focusing on the business problem and the result.",
+contact_label:"LET'S BUILD SOMETHING",contact_title:"Have a problem?<br><span>Let's solve it.</span>",contact_desc:"Tell us what you need. You don't need to know the technical solution — that's our job.",
+f_name:"Name",f_company:"Company",f_email:"Email",f_service:"Service",f_message:"Message",ph_name:"Your name",ph_company:"Company name",ph_message:"Tell us about your project or the problem you want to solve",
+o1:"Website",o2:"Custom system",o3:"Automation",o4:"Cybersecurity",o5:"Data & analytics",o6:"Digital growth",o7:"Not sure yet",submit:"Send Project Request ↗",form_note:"Your request will be sent directly to the Clean Line team.",footer_text:"Digital solutions for businesses ready to move forward."
+}};
+function applyLanguage(lang){
+ const t=translations[lang];
+ document.documentElement.lang=lang;document.documentElement.dir=lang==="ar"?"rtl":"ltr";
+ document.body.classList.toggle("en",lang==="en");
+ document.querySelectorAll("[data-i18n]").forEach(el=>el.textContent=t[el.dataset.i18n]||"");
+ document.querySelectorAll("[data-i18n-html]").forEach(el=>el.innerHTML=t[el.dataset.i18nHtml]||"");
+ document.querySelectorAll("[data-i18n-placeholder]").forEach(el=>el.placeholder=t[el.dataset.i18nPlaceholder]||"");
+ document.getElementById("langBtn").textContent=lang==="ar"?"EN":"AR";
+ localStorage.setItem("cleanline-lang",lang);
+}
+const savedLang=localStorage.getItem("cleanline-lang")||"ar";
+applyLanguage(savedLang);
+document.getElementById("langBtn").onclick=()=>applyLanguage(document.documentElement.lang==="ar"?"en":"ar");
+const savedTheme=localStorage.getItem("cleanline-theme")||"dark";
+document.body.classList.toggle("light",savedTheme==="light");
+document.getElementById("themeBtn").textContent=savedTheme==="light"?"☾":"☼";
+document.getElementById("themeBtn").onclick=()=>{
+ const light=!document.body.classList.contains("light");
+ document.body.classList.toggle("light",light);
+ document.getElementById("themeBtn").textContent=light?"☾":"☼";
+ localStorage.setItem("cleanline-theme",light?"light":"dark");
+};
+const menu=document.querySelector(".menu"),nav=document.querySelector("nav");
+menu.onclick=()=>{
+ nav.style.display=nav.style.display==="flex"?"none":"flex";
+ nav.style.position="absolute";nav.style.top="76px";nav.style.left="0";nav.style.right="0";
+ nav.style.padding="20px 5vw";nav.style.background="var(--bg)";nav.style.flexDirection="column";nav.style.alignItems="flex-start";
+};
+document.querySelectorAll("nav a").forEach(a=>a.onclick=()=>{if(innerWidth<901)nav.style.display="none"});
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
